@@ -162,8 +162,9 @@ Validación previa al merge: abrir cada `target` manualmente en **Win10** y **Wi
 4. [x] Lista inicial + `docs/TARGETS.md` (seguir validando URIs en Win10/11).
 5. [x] `PRIVACY.md`, `docs/privacy-policy.html`, README, `docs/STORE-EN.md`.
 6. [x] Fase 3 parcial: **búsqueda** en popup; **ayuda** opcional (`?` → Microsoft Support por idioma).
-7. [ ] Habilitar GitHub Pages y comprobar URL pública de privacidad.
-8. [ ] Pruebas Win10/11, empaquetado zip, capturas EN, publicación en tiendas.
+7. [x] **Atajos personalizados** del usuario (añadir / editar / eliminar), validación de URI, `customShortcutsV1` en `storage`.
+8. [ ] Habilitar GitHub Pages y comprobar URL pública de privacidad.
+9. [ ] Pruebas Win10/11, empaquetado zip, capturas EN, publicación en tiendas.
 
 ---
 

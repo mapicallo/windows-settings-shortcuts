@@ -12,7 +12,10 @@ Windows Settings Shortcuts lets you open pages in the Windows **Settings** app b
 
 ## Local storage
 
-The extension may save **only** your **interface language preference** (English or Spanish) using the browser’s extension storage (`chrome.storage.local` / `browser.storage.local`). This stays on your device.
+The extension may save the following **on your device only** using the browser’s extension storage (`chrome.storage.local` / `browser.storage.local`):
+
+- Your **interface language** preference (English or Spanish).
+- **Personal shortcuts** you create: the **name**, **address** (`ms-settings:` or other allowed link types), and an internal id. Nothing is uploaded to us.
 
 ## Optional help links
 

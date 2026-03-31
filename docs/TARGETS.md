@@ -43,6 +43,14 @@ Verify each URI on **your** minimum supported Windows builds (10 / 11) and brows
 
 Full URL pattern: `ms-settings:SECTION` (opened as the tab URL).
 
+## User-defined shortcuts (local storage)
+
+| Key | Value |
+|-----|--------|
+| `customShortcutsV1` | JSON array of `{ id, title, uri }` — only `ms-settings:`, `http(s):`, `edge://`, `chrome://` allowed (see extension validation). |
+
+User content is **not** synced by the extension; clearing extension data removes these entries.
+
 ## Optional help links (`?` in popup)
 
 Some shortcuts resolve to Microsoft’s Windows help hub (locale-aware):
