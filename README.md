@@ -30,6 +30,8 @@ Toolbar icons are **PNG** assets in `icons/` (gear on Windows blue). Regenerate 
 
 `powershell -ExecutionPolicy Bypass -File scripts/generate-icons.ps1`
 
+For **Chrome Web Store → Graphic resources → 128×128 icon**, use `icons/chrome-web-store-icon-128.png` (opaque background, exact size).
+
 See [IMPLEMENTATION.md](./IMPLEMENTATION.md) for the full roadmap.
 
 ## Store submission package (Chrome / Edge)

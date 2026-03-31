@@ -2,6 +2,8 @@
 
 **Name:** Windows Settings Shortcuts
 
+**Chrome Web Store icon (128×128):** Upload `icons/chrome-web-store-icon-128.png` (or `icons/icon128.png` — same image). PNG, opaque square, **exactly 128×128 px**. Regenerate with `scripts/generate-icons.ps1`.
+
 **Short description:** Quick access to Windows Settings pages. Opens system settings only; you stay in control.
 
 **Long description (draft):**

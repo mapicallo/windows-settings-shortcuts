@@ -30,11 +30,10 @@ function Write-IconPng([int]$size, [string]$path) {
   $g.SmoothingMode = [System.Drawing.Drawing2D.SmoothingMode]::AntiAlias
   $g.PixelOffsetMode = [System.Drawing.Drawing2D.PixelOffsetMode]::HighQuality
 
-  # Background — Windows accent blue with subtle corner radius feel (filled circle for tiny sizes)
+  # Full opaque background — required for Chrome Web Store 128×128 (no transparent corners).
   $bg = [System.Drawing.Color]::FromArgb(255, 0, 120, 212)
   $brushBg = New-Object System.Drawing.SolidBrush $bg
-  $pad = [Math]::Max(1, [int]($size * 0.06))
-  $g.FillEllipse($brushBg, $pad, $pad, $size - 2 * $pad, $size - 2 * $pad)
+  $g.FillRectangle($brushBg, 0, 0, $size, $size)
   $brushBg.Dispose()
 
   $cx = $size / 2.0
@@ -91,4 +90,8 @@ foreach ($s in @(16, 32, 48, 128)) {
   Write-IconPng $s (Join-Path $OutDir "icon$s.png")
 }
 
+# Explicit Chrome Web Store listing asset (128×128 PNG, same pixels as icon128.png).
+Copy-Item (Join-Path $OutDir "icon128.png") (Join-Path $OutDir "chrome-web-store-icon-128.png") -Force
+
 Write-Host "Wrote icons to $OutDir"
+Write-Host "Chrome Web Store upload: chrome-web-store-icon-128.png (128×128)"
