@@ -20,6 +20,8 @@ Generate from your best UI shot (default: `pantallazos_settings\4_ux-extension.p
 
 Output folder: `pantallazos_settings\chrome-web-store-promo\` → `promo-small-440x280.png`, `promo-marquee-1400x560.png`. Override source with `-SourceFile "C:\path\to.png"`.
 
+**Microsoft Edge** Partner Center asks for the same sizes: **440×280** (small promotional) and **1400×560** (large promotional). Use the same two files above.
+
 **Short description:** Quick access to Windows Settings pages. Opens system settings only; you stay in control.
 
 **Long description (draft):**
