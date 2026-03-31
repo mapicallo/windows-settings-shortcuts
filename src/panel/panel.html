@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Windows Settings Shortcuts</title>
+    <link rel="stylesheet" href="panel.css" />
+  </head>
+  <body>
+    <div class="panel-shell">
+      <div class="panel-toolbar">
+        <button type="button" id="btnClose" class="btn-close"></button>
+      </div>
+
+      <header class="header">
+        <h1 class="title" id="extTitle"></h1>
+        <div class="lang-row">
+          <label class="lang-label" for="langSelect" id="langLabel"></label>
+          <select id="langSelect" class="lang-select" aria-labelledby="langLabel">
+            <option value="en"></option>
+            <option value="es"></option>
+          </select>
+        </div>
+        <div class="search-wrap">
+          <input
+            id="filterInput"
+            class="search-input"
+            type="search"
+            name="q"
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </div>
+      </header>
+
+      <main id="groupsRoot" class="groups"></main>
+      <p id="noResults" class="no-results hidden" role="status"></p>
+
+      <p class="footer-hint" id="footerHint"></p>
+      <p class="footer-hint footer-hint-secondary" id="footerWindowHint"></p>
+    </div>
+
+    <script type="module" src="panel.js"></script>
+  </body>
+</html>

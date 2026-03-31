@@ -1,11 +1,10 @@
 {
   "manifest_version": 3,
   "name": "__MSG_extName__",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "__MSG_extDescription__",
   "default_locale": "en",
   "action": {
-    "default_popup": "src/popup/popup.html",
     "default_title": "__MSG_extName__",
     "default_icon": {
       "16": "icons/icon16.png",
@@ -21,5 +20,5 @@
   "background": {
     "service_worker": "src/background/service-worker.js"
   },
-  "permissions": ["storage", "tabs"]
+  "permissions": ["storage", "tabs", "windows"]
 }

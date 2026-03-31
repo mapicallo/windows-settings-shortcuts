@@ -44,7 +44,13 @@
         <strong>Personal shortcuts</strong> you create: the <strong>name</strong>, <strong>address</strong>
         (<code>ms-settings:</code> or other allowed link types), and an internal id. Nothing is uploaded to the developer.
       </li>
+      <li>
+        <strong>Panel window size and position</strong> (width, height, and coordinates when available) so the floating panel can reopen similarly.
+      </li>
     </ul>
+    <p>
+      The extension may use <strong>session storage</strong> to remember which browser window is the panel so bounds updates attach to the correct window only.
+    </p>
 
     <h2>Optional help links</h2>
     <p>
@@ -54,8 +60,9 @@
 
     <h2>Permissions</h2>
     <ul>
-      <li><strong>storage</strong> — to remember your language choice.</li>
+      <li><strong>storage</strong> — language, personal shortcuts, and last panel window bounds.</li>
       <li><strong>tabs</strong> — to open a new tab when you click a shortcut or optional help link.</li>
+      <li><strong>windows</strong> — to open/focus the floating panel and optionally save its size and position.</li>
     </ul>
 
     <h2>Contact</h2>

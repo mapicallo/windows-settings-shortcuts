@@ -37,10 +37,12 @@ windows-settings-shortcuts/
 │   ├── lib/
 │   │   ├── i18n-runtime.js    # Resolver idioma UI (selector vs default)
 │   │   └── open-target.js     # mapping type → tabs.create / windows.open
-│   └── popup/
-│       ├── popup.html
-│       ├── popup.css
-│       └── popup.js
+│   ├── panel/
+│   │   ├── panel.html
+│   │   ├── panel.css
+│   │   └── panel.js
+│   └── ui/
+│       └── app.js               # Lógica principal de la vista
 ├── docs/
 │   ├── PRIVACY.md             # Texto para GitHub Pages / embutido
 │   └── STORE-EN.md            # Borrador ficha EN (+ ES opcional)
@@ -164,7 +166,8 @@ Validación previa al merge: abrir cada `target` manualmente en **Win10** y **Wi
 6. [x] Fase 3 parcial: **búsqueda** en popup; **ayuda** opcional (`?` → Microsoft Support por idioma).
 7. [x] **Atajos personalizados** del usuario (añadir / editar / eliminar), validación de URI, `customShortcutsV1` en `storage`.
 8. [ ] Habilitar GitHub Pages y comprobar URL pública de privacidad.
-9. [ ] Pruebas Win10/11, empaquetado zip, capturas EN, publicación en tiendas.
+9. [x] Ventana flotante (`chrome.windows` + `panel.html`), cerrar, mover/redimensionar, persistencia de bounds.
+10. [ ] Pruebas Win10/11, empaquetado zip, capturas EN, publicación en tiendas.
 
 ---
 

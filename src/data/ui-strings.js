@@ -29,6 +29,9 @@ export const POPUP_UI = {
     customErrorUri: 'Enter a valid address (see hint below).',
     footer:
       'Each item opens a Windows Settings page in a new browser tab. You control what happens next.',
+    closeWindow: 'Close',
+    windowHint:
+      'Drag the window by its title bar to move it, or drag an edge to resize. Size and position are saved for next time.',
     tierAdvanced: 'Advanced',
   },
   es: {
@@ -58,6 +61,9 @@ export const POPUP_UI = {
     customErrorUri: 'Escribe una dirección válida (ver indicación abajo).',
     footer:
       'Cada elemento abre una página de Configuración de Windows en una nueva pestaña. Tú decides qué hacer después.',
+    closeWindow: 'Cerrar',
+    windowHint:
+      'Arrastra la ventana por la barra de título para moverla o los bordes para redimensionarla. Se guardan tamaño y posición.',
     tierAdvanced: 'Avanzado',
   },
 };

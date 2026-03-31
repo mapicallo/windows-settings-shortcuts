@@ -51,6 +51,14 @@ Full URL pattern: `ms-settings:SECTION` (opened as the tab URL).
 
 User content is **not** synced by the extension; clearing extension data removes these entries.
 
+## Panel window bounds (`storage.local`)
+
+| Key | Value |
+|-----|--------|
+| `panelWindowBoundsV1` | Optional `{ width, height, left?, top? }` — used when creating the panel window again. |
+
+Session key `panelWindowId` (`storage.session`): current panel window id for bounds listener (cleared when that window closes).
+
 ## Optional help links (`?` in popup)
 
 Some shortcuts resolve to Microsoft’s Windows help hub (locale-aware):

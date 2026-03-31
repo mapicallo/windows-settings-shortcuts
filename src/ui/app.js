@@ -402,6 +402,13 @@ function applyStaticUi(lang) {
   document.getElementById('extTitle').textContent = u.title;
   document.getElementById('langLabel').textContent = u.languageLabel;
   document.getElementById('footerHint').textContent = u.footer;
+  const footerWin = document.getElementById('footerWindowHint');
+  if (footerWin) footerWin.textContent = u.windowHint;
+  const btnClose = document.getElementById('btnClose');
+  if (btnClose) {
+    btnClose.textContent = u.closeWindow;
+    btnClose.setAttribute('aria-label', u.closeWindow);
+  }
 
   const filterInput = document.getElementById('filterInput');
   if (filterInput) {
@@ -416,7 +423,7 @@ function applyStaticUi(lang) {
   optEs.textContent = u.optionEs;
 }
 
-async function main() {
+export async function initApp() {
   const sel = document.getElementById('langSelect');
   const filterInput = document.getElementById('filterInput');
   let lang = await getUiLang();
@@ -424,6 +431,8 @@ async function main() {
 
   sel.value = lang;
   applyStaticUi(lang);
+
+  document.getElementById('btnClose')?.addEventListener('click', () => window.close());
 
   /** @type {() => Promise<void>} */
   let redraw = async () => {};
@@ -449,5 +458,3 @@ async function main() {
 
   await redraw();
 }
-
-main().catch(() => {});
