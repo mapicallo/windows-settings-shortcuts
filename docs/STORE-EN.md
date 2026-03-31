@@ -10,6 +10,16 @@
 
 (Default: reads that folder, writes `chrome-web-store-1280x800\*.png` next to the sources. Use `-Width 640` for 640×400.)
 
+**Promotional tiles (optional but recommended):**  
+- **Small:** 440×280 px, JPEG or 24-bit PNG, no alpha.  
+- **Marquee:** 1400×560 px, same rules.
+
+Generate from your best UI shot (default: `pantallazos_settings\4_ux-extension.png`):
+
+`powershell -ExecutionPolicy Bypass -File scripts/process-store-promo-tiles.ps1`
+
+Output folder: `pantallazos_settings\chrome-web-store-promo\` → `promo-small-440x280.png`, `promo-marquee-1400x560.png`. Override source with `-SourceFile "C:\path\to.png"`.
+
 **Short description:** Quick access to Windows Settings pages. Opens system settings only; you stay in control.
 
 **Long description (draft):**

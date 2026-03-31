@@ -34,6 +34,8 @@ For **Chrome Web Store → Graphic resources → 128×128 icon**, use `icons/chr
 
 **Store screenshots (1280×800 or 640×400, no alpha):** put PNG sources in `C:\code\pantallazos_settings` (or pass `-SourceDir`), then run `scripts/process-store-screenshots.ps1` — output folder `chrome-web-store-1280x800` beside your sources.
 
+**Promo tiles (440×280 small, 1400×560 marquee):** run `scripts/process-store-promo-tiles.ps1` — outputs `chrome-web-store-promo\` next to your `pantallazos_settings` sources.
+
 See [IMPLEMENTATION.md](./IMPLEMENTATION.md) for the full roadmap.
 
 ## Store submission package (Chrome / Edge)
