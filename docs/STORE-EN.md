@@ -36,11 +36,10 @@ Organize frequent Windows Settings destinations in one place. The extension open
 
 Designed for Windows 10 and 11 with Microsoft Edge or Google Chrome.
 
-**Privacy policy URL (GitHub Pages):**  
-After enabling Pages for this repo (e.g. **/docs** folder), use:
+**Privacy policy URL (GitHub Pages):**
 
 `https://mapicallo.github.io/windows-settings-shortcuts/privacy-policy.html`
 
-(Source file: `docs/privacy-policy.html`. Markdown mirror: `docs/PRIVACY.md`.)
+Use **branch `master`** + **`/(root)`** in Pages settings: the HTML file must be **`privacy-policy.html` at the repo root**. A duplicate for reference lives in `docs/privacy-policy.html` — update both if content changes (or switch Pages to `/docs` only and keep a single file there).
 
 **Justification for `tabs` + `storage` + `windows`:** Open tabs for settings/help links; store UI language, personal shortcuts, and optional panel bounds; create/focus the floating panel window.

@@ -53,8 +53,11 @@ Upload that ZIP to the **Chrome Web Store** developer dashboard or **Microsoft E
 
 The extension does **not** send your data to external servers. It stores **locally** (`chrome.storage.local`): your **UI language**, **personal shortcuts** (name + link), and **last panel window size/position**. Transient **`chrome.storage.session`** may hold the current panel window id for bounds tracking. See [docs/PRIVACY.md](./docs/PRIVACY.md).
 
-**Store / public URL:** enable **GitHub Pages** (source: `/docs`) and use  
-`https://mapicallo.github.io/windows-settings-shortcuts/privacy-policy.html` as the privacy policy link ([`docs/privacy-policy.html`](./docs/privacy-policy.html)).
+**Store / public URL:** enable **GitHub Pages** and use  
+`https://mapicallo.github.io/windows-settings-shortcuts/privacy-policy.html` as the privacy policy link.
+
+- If Pages is set to **`/(root)`** (branch `master`): the file served is **[`privacy-policy.html`](./privacy-policy.html)** at the repository root.
+- If Pages is set to **`/docs`**: use [`docs/privacy-policy.html`](./docs/privacy-policy.html) as the published root (same URL path; keep both copies in sync if you use both layouts).
 
 ## License
 
