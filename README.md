@@ -26,6 +26,10 @@ Repository: [github.com/mapicallo/windows-settings-shortcuts](https://github.com
 - `_locales/` — store strings (`name` / `description` via `__MSG_*__`)
 - `docs/` — privacy draft, targets checklist, store copy
 
+Toolbar icons are **PNG** assets in `icons/` (gear on Windows blue). Regenerate with:
+
+`powershell -ExecutionPolicy Bypass -File scripts/generate-icons.ps1`
+
 See [IMPLEMENTATION.md](./IMPLEMENTATION.md) for the full roadmap.
 
 ## Privacy
