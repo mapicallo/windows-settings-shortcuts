@@ -1,0 +1,30 @@
+{
+  "extName": {
+    "message": "Windows Settings Shortcuts",
+    "description": "Nombre de la extensión."
+  },
+  "extDescription": {
+    "message": "Acceso rápido a páginas de Configuración de Windows. Solo abre ajustes del sistema; tú mantienes el control.",
+    "description": "Descripción corta para la tienda."
+  },
+  "popupLanguageLabel": {
+    "message": "Idioma",
+    "description": "Etiqueta del selector de idioma."
+  },
+  "popupLanguageEn": {
+    "message": "Inglés",
+    "description": "Opción inglés."
+  },
+  "popupLanguageEs": {
+    "message": "Español",
+    "description": "Opción español."
+  },
+  "popupFooterHint": {
+    "message": "Cada elemento abre una página de Configuración de Windows en una nueva pestaña.",
+    "description": "Nota de uso en el popup."
+  },
+  "tierAdvanced": {
+    "message": "Avanzado",
+    "description": "Insignia para atajos avanzados."
+  }
+}

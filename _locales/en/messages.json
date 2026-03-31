@@ -1,0 +1,30 @@
+{
+  "extName": {
+    "message": "Windows Settings Shortcuts",
+    "description": "Extension display name."
+  },
+  "extDescription": {
+    "message": "Quick access to Windows Settings pages. Opens system settings only; you stay in control.",
+    "description": "Store short description."
+  },
+  "popupLanguageLabel": {
+    "message": "Language",
+    "description": "Label for UI language selector."
+  },
+  "popupLanguageEn": {
+    "message": "English",
+    "description": "English option label."
+  },
+  "popupLanguageEs": {
+    "message": "Spanish",
+    "description": "Spanish option label."
+  },
+  "popupFooterHint": {
+    "message": "Each item opens a Windows Settings page in a new browser tab.",
+    "description": "Short usage note in popup."
+  },
+  "tierAdvanced": {
+    "message": "Advanced",
+    "description": "Badge for advanced shortcuts."
+  }
+}
