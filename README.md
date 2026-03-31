@@ -32,6 +32,8 @@ Toolbar icons are **PNG** assets in `icons/` (gear on Windows blue). Regenerate 
 
 For **Chrome Web Store → Graphic resources → 128×128 icon**, use `icons/chrome-web-store-icon-128.png` (opaque background, exact size).
 
+**Store screenshots (1280×800 or 640×400, no alpha):** put PNG sources in `C:\code\pantallazos_settings` (or pass `-SourceDir`), then run `scripts/process-store-screenshots.ps1` — output folder `chrome-web-store-1280x800` beside your sources.
+
 See [IMPLEMENTATION.md](./IMPLEMENTATION.md) for the full roadmap.
 
 ## Store submission package (Chrome / Edge)
