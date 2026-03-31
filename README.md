@@ -32,6 +32,17 @@ Toolbar icons are **PNG** assets in `icons/` (gear on Windows blue). Regenerate 
 
 See [IMPLEMENTATION.md](./IMPLEMENTATION.md) for the full roadmap.
 
+## Store submission package (Chrome / Edge)
+
+Build a ZIP with **only** what the browser needs (`manifest.json`, `icons/`, `_locales/`, `src/`). The file name includes the version from `manifest.json`:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/package-store.ps1
+```
+
+Output: `dist/windows-settings-shortcuts-v<version>.zip` (example: `windows-settings-shortcuts-v0.4.2.zip`).  
+Upload that ZIP to the **Chrome Web Store** developer dashboard or **Microsoft Edge** Partner Center. The `dist/` folder is listed in `.gitignore` (build locally before each submission).
+
 ## Privacy
 
 The extension does **not** send your data to external servers. It stores **locally** (`chrome.storage.local`): your **UI language**, **personal shortcuts** (name + link), and **last panel window size/position**. Transient **`chrome.storage.session`** may hold the current panel window id for bounds tracking. See [docs/PRIVACY.md](./docs/PRIVACY.md).
