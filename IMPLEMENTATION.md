@@ -156,12 +156,14 @@ Validación previa al merge: abrir cada `target` manualmente en **Win10** y **Wi
 
 ## 10. Orden de trabajo sugerido (checklist corta)
 
-1. [ ] `manifest.json` + iconos placeholder + popup vacío que abre `ms-settings:windowsupdate`.
-2. [ ] `shortcuts.js` + familias + render en popup.
-3. [ ] Selector EN/ES + `storage`.
-4. [ ] Completar lista cerrada + `docs/TARGETS.md`.
-5. [ ] `PRIVACY.md`, README, texto tienda EN.
-6. [ ] Pruebas Win10/11, empaquetado zip, subida a GitHub Releases (opcional).
+1. [x] `manifest.json` + iconos + popup que abre `ms-settings:`.
+2. [x] `shortcuts.js` + familias + render en popup.
+3. [x] Selector EN/ES + `storage`.
+4. [x] Lista inicial + `docs/TARGETS.md` (seguir validando URIs en Win10/11).
+5. [x] `PRIVACY.md`, `docs/privacy-policy.html`, README, `docs/STORE-EN.md`.
+6. [x] Fase 3 parcial: **búsqueda** en popup; **ayuda** opcional (`?` → Microsoft Support por idioma).
+7. [ ] Habilitar GitHub Pages y comprobar URL pública de privacidad.
+8. [ ] Pruebas Win10/11, empaquetado zip, capturas EN, publicación en tiendas.
 
 ---
 

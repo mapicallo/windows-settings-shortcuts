@@ -15,6 +15,11 @@ Organize frequent Windows Settings destinations in one place. Tap a category, ch
 
 Designed for Windows 10 and 11 with Microsoft Edge or Google Chrome.
 
-**Privacy policy URL:** *(host `docs/PRIVACY.md` on GitHub Pages or similar before submission)*
+**Privacy policy URL (GitHub Pages):**  
+After enabling Pages for this repo (e.g. **/docs** folder), use:
+
+`https://mapicallo.github.io/windows-settings-shortcuts/privacy-policy.html`
+
+(Source file: `docs/privacy-policy.html`. Markdown mirror: `docs/PRIVACY.md`.)
 
 **Justification for `tabs` + `storage`:** Open new tabs for `ms-settings:` links; store UI language preference only.

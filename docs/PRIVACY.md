@@ -14,10 +14,14 @@ Windows Settings Shortcuts lets you open pages in the Windows **Settings** app b
 
 The extension may save **only** your **interface language preference** (English or Spanish) using the browser’s extension storage (`chrome.storage.local` / `browser.storage.local`). This stays on your device.
 
+## Optional help links
+
+Some shortcuts show a **?** control that opens public **Microsoft Support** pages in a new tab (English or Spanish hub, depending on your extension language setting). Those sites are governed by Microsoft’s own policies.
+
 ## Permissions
 
 - **storage** — to remember your language choice.
-- **tabs** — to open a new tab when you click a shortcut.
+- **tabs** — to open a new tab when you click a shortcut or optional help link.
 
 ## Contact
 

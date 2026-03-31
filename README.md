@@ -30,6 +30,9 @@ See [IMPLEMENTATION.md](./IMPLEMENTATION.md) for the full roadmap.
 
 The extension does **not** collect personal data. It only stores your **UI language** choice (`chrome.storage.local`). See [docs/PRIVACY.md](./docs/PRIVACY.md).
 
+**Store / public URL:** enable **GitHub Pages** (source: `/docs`) and use  
+`https://mapicallo.github.io/windows-settings-shortcuts/privacy-policy.html` as the privacy policy link ([`docs/privacy-policy.html`](./docs/privacy-policy.html)).
+
 ## License
 
 MIT — see [LICENSE](./LICENSE).

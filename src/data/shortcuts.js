@@ -17,21 +17,24 @@ export const GROUP_ORDER = [
   'time',
 ];
 
-/** @type {{ id: string, groupId: string, uri: string, tier?: 'advanced' }[]} */
+/**
+ * @typedef {'windowsHub'} HelpKey
+ * @type {{ id: string, groupId: string, uri: string, tier?: 'advanced', help?: HelpKey }[]}
+ */
 export const SHORTCUTS = [
   { id: 'about', groupId: 'system', uri: 'ms-settings:about' },
   { id: 'activation', groupId: 'system', uri: 'ms-settings:activation' },
   { id: 'powersleep', groupId: 'system', uri: 'ms-settings:powersleep' },
   { id: 'optionalfeatures', groupId: 'system', uri: 'ms-settings:optionalfeatures' },
 
-  { id: 'windowsupdate', groupId: 'updates', uri: 'ms-settings:windowsupdate' },
-  { id: 'windowsupdatehistory', groupId: 'updates', uri: 'ms-settings:windowsupdate-history' },
+  { id: 'windowsupdate', groupId: 'updates', uri: 'ms-settings:windowsupdate', help: 'windowsHub' },
+  { id: 'windowsupdatehistory', groupId: 'updates', uri: 'ms-settings:windowsupdate-history', help: 'windowsHub' },
 
   { id: 'network', groupId: 'network', uri: 'ms-settings:network' },
-  { id: 'network_wifi', groupId: 'network', uri: 'ms-settings:network-wifi' },
+  { id: 'network_wifi', groupId: 'network', uri: 'ms-settings:network-wifi', help: 'windowsHub' },
   { id: 'network_ethernet', groupId: 'network', uri: 'ms-settings:network-ethernet' },
-  { id: 'network_status', groupId: 'network', uri: 'ms-settings:network-status' },
-  { id: 'bluetooth', groupId: 'network', uri: 'ms-settings:bluetooth' },
+  { id: 'network_status', groupId: 'network', uri: 'ms-settings:network-status', help: 'windowsHub' },
+  { id: 'bluetooth', groupId: 'network', uri: 'ms-settings:bluetooth', help: 'windowsHub' },
 
   { id: 'printers', groupId: 'devices', uri: 'ms-settings:printers' },
   { id: 'sound', groupId: 'devices', uri: 'ms-settings:sound' },
@@ -52,13 +55,13 @@ export const SHORTCUTS = [
   { id: 'defaultapps', groupId: 'apps', uri: 'ms-settings:defaultapps' },
   { id: 'startupapps', groupId: 'apps', uri: 'ms-settings:startupapps' },
 
-  { id: 'storagesense', groupId: 'storage', uri: 'ms-settings:storagesense' },
+  { id: 'storagesense', groupId: 'storage', uri: 'ms-settings:storagesense', help: 'windowsHub' },
   { id: 'storagepolicies', groupId: 'storage', uri: 'ms-settings:storagepolicies' },
 
-  { id: 'backup', groupId: 'backup', uri: 'ms-settings:backup' },
+  { id: 'backup', groupId: 'backup', uri: 'ms-settings:backup', help: 'windowsHub' },
 
-  { id: 'windowsdefender', groupId: 'security', uri: 'ms-settings:windowsdefender' },
-  { id: 'firewall', groupId: 'security', uri: 'ms-settings:windowsdefender-firewall' },
+  { id: 'windowsdefender', groupId: 'security', uri: 'ms-settings:windowsdefender', help: 'windowsHub' },
+  { id: 'firewall', groupId: 'security', uri: 'ms-settings:windowsdefender-firewall', help: 'windowsHub' },
 
   { id: 'privacy', groupId: 'privacy', uri: 'ms-settings:privacy' },
   { id: 'camera', groupId: 'privacy', uri: 'ms-settings:camera' },

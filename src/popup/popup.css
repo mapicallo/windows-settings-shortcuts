@@ -66,6 +66,34 @@ body {
   font-size: 12px;
 }
 
+.hidden {
+  display: none !important;
+}
+
+.search-wrap {
+  display: block;
+  margin-top: 10px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 13px;
+}
+
+.search-input::placeholder {
+  color: var(--muted);
+}
+
+.search-input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
 .lang-select {
   margin-left: auto;
   padding: 4px 8px;
@@ -125,6 +153,18 @@ details.group[open] summary::after {
   list-style: none;
 }
 
+.shortcut-row {
+  display: flex;
+  align-items: stretch;
+  gap: 4px;
+  margin: 2px 0;
+}
+
+.shortcut-row .shortcut-btn {
+  flex: 1;
+  margin: 0;
+}
+
 .shortcut-btn {
   display: flex;
   align-items: flex-start;
@@ -145,6 +185,30 @@ details.group[open] summary::after {
   background: rgb(0 120 212 / 0.12);
 }
 
+.help-btn {
+  flex-shrink: 0;
+  width: 34px;
+  min-height: 100%;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.help-btn:hover {
+  background: rgb(0 120 212 / 0.12);
+}
+
+.help-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
 .shortcut-btn:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 1px;
@@ -161,6 +225,19 @@ details.group[open] summary::after {
   color: var(--muted);
   border: 1px solid var(--border);
   border-radius: 4px;
+}
+
+.no-results {
+  flex: 1;
+  margin: 0;
+  padding: 16px 14px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.no-results.hidden {
+  display: none;
 }
 
 .footer-hint {

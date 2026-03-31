@@ -43,6 +43,17 @@ Verify each URI on **your** minimum supported Windows builds (10 / 11) and brows
 
 Full URL pattern: `ms-settings:SECTION` (opened as the tab URL).
 
+## Optional help links (`?` in popup)
+
+Some shortcuts resolve to Microsoft’s Windows help hub (locale-aware):
+
+| Locale | URL |
+|--------|-----|
+| EN | https://support.microsoft.com/en-us/windows |
+| ES | https://support.microsoft.com/es-es/windows |
+
+Re-verify URLs and locales before store submission.
+
 ## Future candidates (not in current build)
 
 - User certificates: typically `certmgr.msc` (not a single stable `ms-settings:` page) — evaluate separately.

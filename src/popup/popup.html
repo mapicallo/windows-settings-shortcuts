@@ -16,9 +16,20 @@
           <option value="es"></option>
         </select>
       </div>
+      <div class="search-wrap">
+        <input
+          id="filterInput"
+          class="search-input"
+          type="search"
+          name="q"
+          autocomplete="off"
+          spellcheck="false"
+        />
+      </div>
     </header>
 
     <main id="groupsRoot" class="groups"></main>
+    <p id="noResults" class="no-results hidden" role="status"></p>
 
     <p class="footer-hint" id="footerHint"></p>
 
