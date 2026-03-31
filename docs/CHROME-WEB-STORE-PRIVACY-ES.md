@@ -1,5 +1,7 @@
 # Chrome Web Store — sección Privacidad (borradores en español)
 
+English equivalent: [CHROME-WEB-STORE-PRIVACY-EN.md](./CHROME-WEB-STORE-PRIVACY-EN.md)
+
 Usa estos textos en la consola de desarrollador. **Importante:** en *¿Utilizas código remoto?* elige **No** — esta extensión no carga JavaScript ni Wasm externo al paquete.
 
 ---
