@@ -32,6 +32,7 @@ export const POPUP_UI = {
     closeWindow: 'Close',
     windowHint:
       'Drag the window by its title bar to move it, or drag an edge to resize. Size and position are saved for next time.',
+    versionLabel: 'Version',
     tierAdvanced: 'Advanced',
   },
   es: {
@@ -64,6 +65,7 @@ export const POPUP_UI = {
     closeWindow: 'Cerrar',
     windowHint:
       'Arrastra la ventana por la barra de título para moverla o los bordes para redimensionarla. Se guardan tamaño y posición.',
+    versionLabel: 'Versión',
     tierAdvanced: 'Avanzado',
   },
 };

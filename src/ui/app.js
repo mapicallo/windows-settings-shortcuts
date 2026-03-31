@@ -421,6 +421,16 @@ function applyStaticUi(lang) {
   const optEs = sel.querySelector('option[value="es"]');
   optEn.textContent = u.optionEn;
   optEs.textContent = u.optionEs;
+
+  const verEl = document.getElementById('extensionVersion');
+  if (verEl) {
+    try {
+      const v = chrome.runtime.getManifest().version;
+      verEl.textContent = `${u.versionLabel} ${v}`;
+    } catch {
+      verEl.textContent = '';
+    }
+  }
 }
 
 export async function initApp() {
