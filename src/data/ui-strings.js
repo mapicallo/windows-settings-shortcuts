@@ -33,6 +33,8 @@ export const POPUP_UI = {
     windowHint:
       'Drag the window by its title bar to move it, or drag an edge to resize. Size and position are saved for next time.',
     versionLabel: 'Version',
+    brandFooterAria: 'AI4Context — open website',
+    brandByPrefix: 'by',
     tierAdvanced: 'Advanced',
   },
   es: {
@@ -66,6 +68,8 @@ export const POPUP_UI = {
     windowHint:
       'Arrastra la ventana por la barra de título para moverla o los bordes para redimensionarla. Se guardan tamaño y posición.',
     versionLabel: 'Versión',
+    brandFooterAria: 'AI4Context — abrir sitio web',
+    brandByPrefix: 'por',
     tierAdvanced: 'Avanzado',
   },
 };

@@ -431,6 +431,11 @@ function applyStaticUi(lang) {
       verEl.textContent = '';
     }
   }
+
+  const brandFooter = document.getElementById('a4c-brand-footer');
+  if (brandFooter) brandFooter.setAttribute('aria-label', u.brandFooterAria);
+  const byPrefix = document.getElementById('a4c-brand-by-prefix');
+  if (byPrefix) byPrefix.textContent = u.brandByPrefix;
 }
 
 export async function initApp() {

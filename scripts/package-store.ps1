@@ -19,6 +19,7 @@ if (Test-Path $staging) { Remove-Item $staging -Recurse -Force }
 New-Item -ItemType Directory -Force -Path $staging | Out-Null
 
 Copy-Item (Join-Path $RepoRoot 'manifest.json') $staging
+Copy-Item (Join-Path $RepoRoot 'brand') $staging -Recurse
 Copy-Item (Join-Path $RepoRoot 'icons') $staging -Recurse
 Copy-Item (Join-Path $RepoRoot '_locales') $staging -Recurse
 Copy-Item (Join-Path $RepoRoot 'src') $staging -Recurse
