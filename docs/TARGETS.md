@@ -4,7 +4,7 @@ Verify each URI on **your** minimum supported Windows builds (10 / 11) and brows
 
 | URI fragment (after `ms-settings:`) | Notes |
 |---------------------------------------|--------|
-| about | Device / Windows specs |
+| about | Device / Windows specs — **installed RAM** lives here (`ms-settings:about`). Search keywords in app: RAM, memoria… |
 | activation | Activation |
 | powersleep | Power & sleep |
 | optionalfeatures | Optional features |
@@ -30,7 +30,7 @@ Verify each URI on **your** minimum supported Windows builds (10 / 11) and brows
 | appsfeatures | Installed apps |
 | defaultapps | Defaults |
 | startupapps | Startup apps |
-| storagesense | Storage |
+| storagesense | **Disk** storage (C: usage, Storage Sense) — not hardware RAM |
 | storagepolicies | Storage policies / settings |
 | backup | Backup |
 | windowsdefender | Windows Security |

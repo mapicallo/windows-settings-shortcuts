@@ -88,7 +88,10 @@ export const LABELS = {
     time: { en: 'Time & language', es: 'Hora e idioma' },
   },
   items: {
-    about: { en: 'About (device & Windows specs)', es: 'Acerca de (dispositivo y Windows)' },
+    about: {
+      en: 'About — installed RAM, CPU & device specs',
+      es: 'Acerca de — memoria RAM instalada, CPU y especificaciones',
+    },
     activation: { en: 'Activation', es: 'Activación' },
     powersleep: { en: 'Power & sleep', es: 'Energía y suspensión' },
     optionalfeatures: {
@@ -126,7 +129,10 @@ export const LABELS = {
     },
     defaultapps: { en: 'Default apps', es: 'Aplicaciones predeterminadas' },
     startupapps: { en: 'Startup apps', es: 'Aplicaciones de inicio' },
-    storagesense: { en: 'Storage', es: 'Almacenamiento' },
+    storagesense: {
+      en: 'Storage — disk space & drives (not RAM)',
+      es: 'Almacenamiento — disco y espacio (no es la RAM)',
+    },
     storagepolicies: {
       en: 'Storage settings / policies',
       es: 'Configuración de almacenamiento',
